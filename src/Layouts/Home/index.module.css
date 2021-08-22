@@ -1,0 +1,17 @@
+.Wallpaper{
+    background-image: url(../../assets/images/Wallpaper.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+      
+}
+
+
+.Description{
+    padding: 220px 0;
+    text-align: center;
+    color: white;
+}
+

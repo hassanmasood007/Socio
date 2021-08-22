@@ -1,10 +1,12 @@
-import classes from "./home.module.css"
+import classes from "./index.module.css"
+
 import { FunctionComponent } from "react";
+
 const Home:FunctionComponent = () => {
     return (
-        <div >
+        <div className={classes.Wallpaper}>
             <header>
-                <main className={classes.Body}>
+                <main className={classes.Description}>
                     <h1>
                         SOCIO
                     </h1>

@@ -1,11 +1,10 @@
 import { FunctionComponent } from "react";
+import Form from "../../Components/Form/contact/index"
 
 const Contact:FunctionComponent = () => {
     return (
         <div>
-            <h2>
-                helooo
-            </h2>
+            <Form />
         </div>
     )
 }

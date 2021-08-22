@@ -1,28 +1,35 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { FunctionComponent } from "react";
-import Navbar from "./Layouts/Navbar/Navbar";
-import Contact from "./Containers/Contact/Contact";
-import About from "./Containers/About/About";
-import Profile from "./Containers/Profile/Profile";
-import SignUp from "./Containers/user/SignUp/SignUp";
-import Home from "./Layouts/Home/home";
-import Login from "./Containers/user/Login/Login";
+
+
+import Navbar from "./Layouts/Navbar";
+import Contact from "./Containers/Contact";
+import About from "./Containers/About";
+import Profile from "./Containers/Profile";
+import Signup from "./Containers/user/Signup";
+import Home from "./Layouts/Home";
+import Login from "./Containers/user/Login";
+import Feed from "./Containers/Feed/Feed";
 
 
 const App:FunctionComponent = () => {
   return (
-    <div className="">
-      <Navbar />
+    <div>
       <BrowserRouter>
+      <Navbar />
         <Switch>
-          <Route path="/Contact"><Contact /></Route>
-          <Route path="/About"><About /></Route>
-          <Route path="/Profile"><Profile /></Route>
-          <Route path="/Signup"><SignUp /></Route>
-          <Route path="/Login"><Login /></Route>
+          <Route path={"Contact, About,Feed, Profile, Signup, Login"} />
+          <Route exact path="/Contact" component={Contact} />
+          <Route exact path="/About" component={About} />
+          <Route exact path="/Feed" component={Feed} />
+          <Route exact path="/Profile" component={Profile} />
+          <Route exact path="/Signup" component={Signup} />
+          <Route exact path="/Login" component={Login} />
+        </Switch>
+        <Switch>
+            <Route exact path="/" component={Home} />
         </Switch>
       </BrowserRouter>
-      <Home />
     </div>
   );
 };

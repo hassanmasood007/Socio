@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar:FunctionComponent = () => {
     return (
@@ -13,23 +14,36 @@ const Navbar:FunctionComponent = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item active">
-                            <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
+                            <NavLink className="nav-link" to="/">Home <span className="sr-only">(current)</span></NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/About">About</a>
+                            <NavLink className="nav-link" to="/Feed">Feed</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/Contact">Contact</a>
+                            <NavLink className="nav-link" to="/Profile">Profile</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/Notifications">Notifications</NavLink>
                         </li>
                     </ul>
-                    <ul className="navbar-nav">
+                        <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link" href="/Login">Login</a>
+                            <NavLink className="nav-link"  to='/About' >About</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/Signup">Register</a>
+                            <NavLink className="nav-link" to="/Contact">Contact</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/Login">Login</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/Signup">Register</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/Logout">Log Out</NavLink>
                         </li>
                     </ul>
+                    
                 </div>
             </nav>
         </div>
