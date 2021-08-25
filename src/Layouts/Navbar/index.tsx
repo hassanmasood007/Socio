@@ -23,7 +23,7 @@ const Navbar:FunctionComponent = () => {
                             <NavLink className="nav-link" to="/Profile">Profile</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/Notifications">Notifications</NavLink>
+                            <NavLink className="nav-link" to="/Notification">Notifications</NavLink>
                         </li>
                     </ul>
                         <ul className="navbar-nav">
@@ -40,7 +40,7 @@ const Navbar:FunctionComponent = () => {
                             <NavLink className="nav-link" to="/Signup">Register</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/Logout">Log Out</NavLink>
+                            <NavLink className="nav-link" to="/">Log Out</NavLink>
                         </li>
                     </ul>
                     

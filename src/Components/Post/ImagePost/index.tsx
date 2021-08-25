@@ -1,69 +1,38 @@
-import { FunctionComponent } from "react";
-import classes from "./index.module.css"
+import { FunctionComponent} from "react";
+import Options from "../../Options";
 
-const ImagePost: FunctionComponent = () => {
+
+const ImagePost: FunctionComponent = () => { 
   return (
-    <div className={classes.body}>
-      <div className="">
-        <div className="container d-flex justify-content-center align-items-center">
-          <div className="row d-flex justify-content-center">
-            <div className="col-md-8">
-              <div className={classes.commentContainer}>
-                <div className="d-flex flex-column">
-                  <div className="bg-white">
-                    <div className="flex-row d-flex">
-                      <img src="https://in.bmscdn.com/iedb/movies/images/extra/vertical_logo/mobile/thumbnail/xxlarge/wonder-woman-et00040458-15-03-2021-01-43-28.jpg"
-                        alt="img" width="40" className="rounded-circle" />
-                      <div className="d-flex flex-column justify-content-start ml-2">
-                        <div className={classes.name}>
-                          <span className="d-block font-weight-bold">Wonder Women</span>
-                        </div>
+    <div>
+      <div className="card mt-2 mb-3">
+        <div className="card-body h-100">
+          <div className="media">
+            <img src="https://bootdey.com/img/Content/avatar/avatar3.png" width="56" height="56" className="rounded-circle mr-3" alt="Kathy Davis" />
+            <div className="media-body">
+              <small className="float-right text-navy">5m ago</small>
+              <p className="mb-2"><strong>Wonder Women</strong></p>
+              <p>The Uchiha Clan (うちは一族, Uchiha Ichizoku) is one of the four noble clans of Konohagakure,
+                reputed to be the village's strongest because of their Sharingan and natural battle prowess.
+                After helping found Konoha decades ago, the Uchiha grew increasingly isolated from the village's
+                affairs, culminating in most of their deaths during the Uchiha Clan Downfall. Few Uchiha now survive
+                into the present day.</p>
 
-                        <div className={classes.date}>
-                          <span className="text-black-50">Public - 09Jun, 2021</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="mt-2">
-                    <div className="commentText">
-                        <p>Wonder Woman is a superheroine appearing in American comic books published by DC Comics.
-                          The character is a founding member of the Justice League. The character first appeared in All Star
-                          Comics #8 published October 21, 1941 with her first feature in Sensation Comics
-                          #1 in January 1942. The Wonder Woman title has been published by DC Comics almost continuously ever
-                          since. In her homeland, the island nation of Themyscira, her official title is Princess Diana of
-                          Themyscira. When blending into the society outside of her homeland, she sometimes adopts her civilian
-                          identity Diana Prince</p>
-                          <img src="https://contentserver.com.au/assets/646095_523722_p12543972_p_v8_ab.jpg" alt="img" width="650" height="500" className="d-inline-block align-text-top"></img>
-                      </div>
-                        
-                    </div>
-                  </div>
-
-                  <div className="bg=white">
-                    <div className={classes.fs14}>
-                      <div className="d-flex flex-row">
-                        <div className={classes.cursor}>
-                          <div className="p-2"><i className="fa fa-thumbs-o-up"></i><span className="ml-1">Like</span>
-                          </div>
-                        </div>
-                        <div className={classes.cursor}>
-                          <div className="p-2"><i className="fa fa-comment"></i><span className="ml-1">Comment</span>
-                          </div>
-                        </div>
-                        <div className={classes.cursor}>
-                          <div className="p-2"><i className="fa fa-share"></i><span className="ml-1">Share</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div className="row no-gutters mt-1 mb-2">
+                <div className="col-6">
+                  <img src="https://wallpaperaccess.com/full/132749.jpg" className="img-fluid pr-1" alt="Unsplash" />
+                </div>
+                <div className="col-6">
+                  <img src="https://i.pinimg.com/originals/e6/85/72/e68572a301f07a591edf37d934928eed.jpg" className="img-fluid pl-1" alt="Unsplash" />
                 </div>
               </div>
+
+
+              <Options />
             </div>
           </div>
         </div>
       </div>
-
     </div>
   )
 }

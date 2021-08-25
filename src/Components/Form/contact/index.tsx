@@ -1,42 +1,27 @@
 import { FunctionComponent } from "react";
 import classes from "./index.module.css"
+import Button from "../../Buttons/SubmitButton";
+import Input from "../../Buttons/Input";
 
 
 
 const Form: FunctionComponent = () => {
     return (
-        <div className={classes.body}>
-            <div className={classes.container}>
-                <div className={classes.contact}>
-                    <form action="">
-                        <h3>Quick Contact</h3>
-                        <h4>Contact us today, and get reply with in 24 hours!</h4>
-                        <div className={classes.fieldset}>
-                            <fieldset>
-                                <input placeholder="Your name" type="text" tabIndex={1} required autoFocus />
-                            </fieldset>
-                            <fieldset>
-                                <input placeholder="Your Email Address" type="email" tabIndex={2} required />
-                            </fieldset>
-                            <fieldset>
-                                <input placeholder="Your Phone Number" type="tel" tabIndex={3} required />
-                            </fieldset>
-                            <fieldset>
-                                <input placeholder="Your Web Site starts with http://" type="url" tabIndex={4} required />
-                            </fieldset>
-                            <fieldset>
-                                <textarea placeholder="Type your Message Here...." tabIndex={5} required></textarea>
-                            </fieldset>
-                            <fieldset>
-                                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                            </fieldset>
-                        </div>
+        <div className={classes.box}>
+            <form action="">
+                <h3>Quick Contact</h3>
+                <h6>Contact us today, and get reply with in 24 hours!</h6>
 
-                    </form>
-                </div>
+                <Input placeholder="Name" type="text" name="Username" />
+                <Input placeholder="Email Address" type="email" name="Username" />
 
-            </div>
-        </div>
+
+                <Input placeholder="Phone Number" type="text" name="Telephone" />
+                <textarea placeholder="Type your Message Here...."  required></textarea>
+                <Button className="btn btn-primary" name="submit" type="submit" value="Submit" />
+
+            </form>
+        </div >
 
     )
 }

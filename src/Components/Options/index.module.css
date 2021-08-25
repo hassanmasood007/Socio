@@ -1,0 +1,11 @@
+.fs14{
+    font-size: 14px;
+  }
+  
+  .cursor{
+    cursor: pointer;
+  }
+  
+  .cursor:hover{
+    color:blue;
+  }
