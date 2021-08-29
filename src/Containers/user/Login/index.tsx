@@ -12,10 +12,6 @@ const Login: FunctionComponent = () => {
                 <Input type="password" name="Password" placeholder="Password" /> 
                 <Button className="btn btn-primary" type="submit" name="submit" value="Submit"></Button>
             </form>
-            {/* <Link to={{
-                pathname: '',
-                state: [{ id: 1, name: 'Ford', color: 'red' }]
-            }}> </Link> */}
         </div>
     )
 }

@@ -7,6 +7,10 @@ const Options:FunctionComponent = () => {
     const incrementCounter = () => setCounter(counter + 1);
     let   decrementCounter = () => setCounter(counter - 1);
 
+    if(counter<=0) {
+        decrementCounter = () => setCounter(0);
+    }
+
     return(
         <div>
             <div className="bg=white">
@@ -16,14 +20,20 @@ const Options:FunctionComponent = () => {
                         <div className="p-2"><i className="fa fa-thumbs-o-up"></i><span className="ml-1" 
                          onClick={() => {
                             incrementCounter();
-                            decrementCounter();
                             setIsBlue(!isBlue);
                           }}
                          style={{ color: isBlue ? "blue" : "black" }}>Like</span>
                         </div>
                     </div>
+
                     <div className={classes.cursor}>
-                        <div className="p-2"><i className="fa fa-comment"></i><span className="ml-1" onClick={incrementCounter}
+                        <div className="p-2"><i className="fa fa-thumbs-o-down"></i><span className="ml-1" onClick={decrementCounter}
+                        >disLike</span>
+                        </div>
+                    </div>
+
+                    <div className={classes.cursor}>
+                        <div className="p-2"><i className="fa fa-comment"></i><span className="ml-1" 
                         >Comment</span>
                         </div>
                     </div>
