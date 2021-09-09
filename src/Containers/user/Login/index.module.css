@@ -6,8 +6,8 @@ body{
 }
 
 .box{
-    width: 400px;
-    padding: 40px;
+    width: 550px;
+    padding: 60px;
     position: absolute;
     box-shadow: 0px 0px 12px #aaa, -0px -0px 12px #fff;
     top: 54%;
