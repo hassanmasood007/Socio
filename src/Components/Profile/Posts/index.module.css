@@ -1,0 +1,22 @@
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cardsItem {
+    display: flex;
+    padding: 1rem;
+  }
+  
+  
+  
+  

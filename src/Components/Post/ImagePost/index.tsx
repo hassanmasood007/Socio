@@ -1,12 +1,14 @@
-import { FunctionComponent} from "react";
+import { FunctionComponent } from "react";
 import Options from "../../Options";
+import classes from "./index.module.css";
 
 
-const ImagePost: FunctionComponent = () => { 
+const ImagePost: FunctionComponent = () => {
   return (
-    <div>
-      <div className="card mt-2 mb-3">
-        <div className="card-body h-100">
+    <div className="card">
+    <div className={classes.main}>
+      <ul className={classes.cards}>
+        <li className={classes.cardsItem}>
           <div className="media">
             <img src="https://bootdey.com/img/Content/avatar/avatar3.png" width="56" height="56" className="rounded-circle mr-3" alt="Kathy Davis" />
             <div className="media-body">
@@ -31,8 +33,9 @@ const ImagePost: FunctionComponent = () => {
               <Options />
             </div>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
+    </div>
     </div>
   )
 }
