@@ -5,11 +5,11 @@ import classes from "./index.module.css"
 const Notify :FunctionComponent = () => {
   return (
     <div className={classes.body}>
-    <NavLink className="nav-link" to="/Feed">
-      <div className="">
+    
         <div className="container">
           <div className="row d-flex justify-content-center">
             <div className="col-md-8">
+            <NavLink className="nav-link" to="/Feed">
               <div className={classes.commentContainer}>
                 <div className="d-flex flex-column">
                   <div className="bg-white">
@@ -26,11 +26,11 @@ const Notify :FunctionComponent = () => {
                   </div>
                 </div>
               </div>
+              </NavLink>
             </div>
           </div>
-        </div>
       </div>
-      </NavLink>
+      
     </div>
   )
 }

@@ -13,7 +13,9 @@ const About: FunctionComponent = () => {
               sequi cupiditate nulla voluptates exercitationem a ex deserunt impedit rerum nostrum expedita?
               Dignissimos, impedit architecto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum maiores
               id autem, nobis nisi officiis sequi cupiditate nulla voluptates exercitationem a ex deserunt impedit rerum
-              nostrum expedita? Dignissimos, impedit architecto.
+              nostrum expedita. Illum maiores
+              id autem, nobis nisi officiis sequi cupiditate nulla voluptates exercitationem a ex deserunt impedit rerum
+              nostrum expedita
             </h6>
           </p>
 

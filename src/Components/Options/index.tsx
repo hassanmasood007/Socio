@@ -5,11 +5,7 @@ const Options:FunctionComponent = () => {
     const [isBlue, setIsBlue] = useState(false); 
     const [counter, setCounter] = useState(0);
     const incrementCounter = () => setCounter(counter + 1);
-    let   decrementCounter = () => setCounter(counter - 1);
-
-    if(counter<=0) {
-        decrementCounter = () => setCounter(0);
-    }
+    let   decrementCounter = () => setCounter(counter-1 < 0 ? 0 : counter-1);
 
     return(
         <div>
