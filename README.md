@@ -8,7 +8,7 @@ Socio is a clone of facebook and provides every functionality
 
 # Install Dependencies
 
-npm install
+### `npm install`
 
 ## Available Scripts
 
