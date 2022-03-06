@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Socio
+
+Socio is a clone of facebook and provides every functionality
+
+# Install Dependencies
+
+npm install
+
 ## Available Scripts
 
 In the project directory, you can run:
