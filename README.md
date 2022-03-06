@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Socio
 
-Socio is a clone of facebook and provides every functionality
+Socio is a social media application
 
 # Install Dependencies
 
