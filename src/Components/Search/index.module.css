@@ -1,5 +1,5 @@
 .Container {
-  border: 3px solid #2988b9;
+  border: 3px solid #4e606b;
   padding: 0px 10px;
   border-radius: 40px;
   height: 42px;
@@ -14,9 +14,7 @@
 .Search {
   border: none;
   height: 100%;
-  border: 100%;
   padding: 0px 5px;
-  border-radius: 50px;
   font-size: 16px;
   font-weight: 500;
 }
