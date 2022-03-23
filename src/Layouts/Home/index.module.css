@@ -1,17 +1,22 @@
-.Wallpaper{
-    background-image: url(../../assets/images/Wallpaper.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin: 0;
-      
+.Wallpaper {
+  background-image: url(../../assets/images/Wallpaper.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  overflow: hidden;
 }
 
-
-.Description{
-    padding: 220px 0;
-    text-align: center;
-    color: white;
+footer {
+  margin: 90px;
+}
+.Description {
+  padding: 220px 0;
+  text-align: center;
+  color: white;
 }
 
+.body {
+  font-size: 18px;
+}

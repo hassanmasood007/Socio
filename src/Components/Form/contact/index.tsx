@@ -4,7 +4,6 @@ import Button from "../../Buttons/SubmitButton";
 import Input from "../../Buttons/Input";
 
 
-
 const Form: FunctionComponent = () => {
     return (
         <div className={classes.box}>

@@ -7,7 +7,7 @@ const ProfileLogo:FunctionComponent = () => {
         <div>
             <div className="card mt-2 mb-3 pb-3">
                 <div className="card-body text-center">
-                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="Kathy Davis" className="img-fluid rounded-circle mb-2" width="128" height="128" />
+                    <img src="https://images.pexels.com/photos/2486168/pexels-photo-2486168.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Kathy Davis" className="rounded-circle mr-3" width="158" height="158" />
                     <h4 className="card-title mb-0">Hassan Masood</h4>
                     <div className="text-muted mb-2">Front-end Developer</div>
                     <div>
