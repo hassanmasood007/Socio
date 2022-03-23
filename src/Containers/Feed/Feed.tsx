@@ -8,8 +8,6 @@ import Search from "../../Components/Search";
 
 const Feed: FunctionComponent = () => {
   return (
-    <div>
-      <div>
         <div className="container">
           <div className="row">
             <div className="col-lg-4 col-xl-3 order-2 order-lg-1">
@@ -18,7 +16,8 @@ const Feed: FunctionComponent = () => {
               <Following />             
             </div>
 
-            <div className=" col-lg-8 col-xl-6 order-1 order-lg-2 mt-2 mb-3 pb-3">
+
+            <div className="col-lg-8 col-xl-6 order-1 order-lg-2 mt-2 mb-3 pb-3">
               <Post />
               <div>
                 <Post />
@@ -46,9 +45,6 @@ const Feed: FunctionComponent = () => {
             </div>
           </div>
         </div>
-      </div>
-
-    </div>
   )
 }
 

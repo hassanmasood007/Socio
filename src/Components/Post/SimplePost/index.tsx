@@ -5,51 +5,24 @@ import classes from "./index.module.css"
 
 const Post: FunctionComponent = () => {
   return (
-    // <div>
-    //   <div className="card mt-0 mb-3">
-    //     <div className="card-body h-100">
-    //       <div className="media">
-    //         <img src="https://bootdey.com/img/Content/avatar/avatar3.png" width="56" height="56" className="rounded-circle mr-3" alt="Kathy Davis" />
-    //         <div className="media-body">
-    //           <small className="float-right text-navy">5m ago</small>
-    //           <p className="mb-2"><strong>Wonder Women</strong></p>
-
-    //             <p>Wonder Woman is a superheroine appearing in American comic books published by DC Comics.
-    //               The character is a founding member of the Justice League. The character first appeared in All Star
-    //              Comics #8 published October 21, 1941 with her first feature in Sensation Comics
-    //              #1 in January 1942. The Wonder Woman title has been published by DC Comics almost continuously ever
-    //               since. In her homeland, the island nation of Themyscira, her official title is Princess Diana of
-    //               Themyscira. When blending into the society outside of her homeland, she sometimes adopts her civilian sidentity Diana Prince</p>
-    //           <Options />
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
-    <div className="card">
     <div className={classes.main}>
       <ul className={classes.cards}>
         <li className={classes.cardsItem}>
-            <div className="media">
-              <img src="https://bootdey.com/img/Content/avatar/avatar3.png" width="56" height="56" className="rounded-circle mr-3" alt="Kathy Davis" />
-              <div className="media-body">
+          <div className="media">
+            <img src="data:image/jpeg;base64,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" width="56" height="56" className="rounded-circle mr-3" alt="Kathy Davis" />
+            <div className="media-body">
 
-                <small className="float-right text-navy">5m ago</small>
-                  <strong>Wonder Women</strong>
-                  <p >Wonder Woman is a superheroine appearing in American comic books published by DC Comics.
-                    The character is a founding member of the Justice League. The character first appeared in All Star
-                    Comics #8 published October 21, 1941 with her first feature in Sensation Comics
-                    #1 in January 1942. The Wonder Woman title has been published by DC Comics almost continuously ever
-                    since. In her homeland, the island nation of Themyscira, her official title is Princess Diana of
-                    Themyscira. When blending into the society outside of her homeland, she sometimes adopts her civilian sidentity Diana Prince</p>
-                  <Options />
-                </div>
-              </div>
+              <small className="float-right text-navy">5m ago</small>
+              <strong>Superman</strong>
+              <p >Superman is a superhero who first appeared in American comic books published by DC Comics. The character was created by writer Jerry Siegel and artist Joe Shuster, and debuted in the comic book Action Comics #1 (cover-dated June 1938 and published April 18, 1938). Superman has been adapted to a number of other media which includes radio serials, novels, movies, television shows and theatre.</p>
+              <Options />
+            </div>
+          </div>
         </li>
       </ul>
+      <hr />
+    </div>
 
-    </div>
-    </div>
   )
 }
 
